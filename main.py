@@ -12,7 +12,7 @@ session = Session()
 
 # Модель статьи
 class Article(Base):
-    tablename = 'article'
+    __tablename__ = 'article'
 
     id = Column(Integer, primary_key=True)
     title = Column(String(100), nullable=False)
